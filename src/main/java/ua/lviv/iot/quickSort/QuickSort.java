@@ -11,13 +11,12 @@ public class QuickSort {
 		sorted(listToSort, isAsc, 0, listToSort.size() - 1);
 	}
 
-	private  static List<Integer> sorted(List<Integer> listToSort, Boolean isAsc, Integer low, Integer high) {
+	private  static void sorted(List<Integer> listToSort, Boolean isAsc, Integer low, Integer high) {
 		if (low < high) {
 			Integer pivot = partition(listToSort, isAsc, low, high);
 			sorted(listToSort, isAsc, low, pivot - 1);
 			sorted(listToSort, isAsc, pivot + 1, high);
 		}
-		return listToSort;
 	}
 
 	private static void swap(List<Integer> listToSort, Integer low, Integer high) {
