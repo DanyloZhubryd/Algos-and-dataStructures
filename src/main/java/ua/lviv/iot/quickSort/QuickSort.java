@@ -1,4 +1,4 @@
-package ua.lviv.iot.quick_sort;
+package ua.lviv.iot.quickSort;
 
 import java.util.List;
 import java.util.Random;
