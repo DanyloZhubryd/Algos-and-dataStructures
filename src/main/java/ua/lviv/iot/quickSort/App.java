@@ -43,9 +43,13 @@ public class App {
 				System.exit(1);
 			}
 		}
+		Long startSort = System.nanoTime();
 		QuickSort.sorted(listToSort, isAsc);
+		Long endSort = System.nanoTime();
+		Long sortDuration = (endSort - startSort)/1000;
 		listToSort.stream().forEach(element -> System.out.print(element + " "));
-		System.out.println("\n Comparisons: " + QuickSort.getComparisonCounter());
+		System.out.println("\nComparisons: " + QuickSort.getComparisonCounter());
 		System.out.println("Swaps: " + QuickSort.getSwapCounter());
+		System.out.println("Sort duration " + sortDuration + " mks");
 	}
 }
