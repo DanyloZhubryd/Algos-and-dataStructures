@@ -6,6 +6,7 @@ target/
 .settings/
 .project
 .classpath
+.idea/
 
 # Log file
 *.log
