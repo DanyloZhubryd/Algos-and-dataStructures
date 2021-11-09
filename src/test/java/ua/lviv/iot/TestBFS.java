@@ -7,7 +7,7 @@ import org.junit.Test;
 public class TestBFS {
     @Test
     public void testBFSCommonGraph() {
-        Graph graph = new Graph(4);
+        Graph graph = new Graph();
         graph.addEdge(0, 1);
         graph.addEdge(0, 2);
         graph.addEdge(1, 2);
@@ -19,13 +19,8 @@ public class TestBFS {
     }
     @Test
     public void testBFSOneElemGraph() {
-        Graph graph = new Graph(1);
-        assertEquals(0 ,graph.BFS(0));
-    }
-
-    @Test
-    public void testBFSZeroElemGraph() {
-        Graph graph = new Graph(0);
+        Graph graph = new Graph();
+        graph.addEdge(0, 0);
         assertEquals(0 ,graph.BFS(0));
     }
 }

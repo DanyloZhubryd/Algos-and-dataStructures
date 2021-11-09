@@ -14,7 +14,7 @@ public class Main {
             int[] lineToInt = convertLineToIntArray(line);
             int numberOfEdges = lineToInt[0];
             int sourceVertex = lineToInt[1];
-            Graph graph = new Graph(numberOfEdges);
+            Graph graph = new Graph();
 
             for (int i = 0; i < numberOfEdges; i++) {
                 line = reader.readLine();
