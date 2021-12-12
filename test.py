@@ -51,5 +51,6 @@ class Test(unittest.TestCase):
         actual_result = rabin_karp.find(pattern, text)
         self.assertEqual(expected_result, actual_result)
 
+
 if __name__ == '__main__':
     unittest.main()
