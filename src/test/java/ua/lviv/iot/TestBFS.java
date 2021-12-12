@@ -1,6 +1,6 @@
-package test.java.ua.lviv.iot;
+package ua.lviv.iot;
 
-import main.java.ua.lviv.iot.Graph;
+import ua.lviv.iot.Graph;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 

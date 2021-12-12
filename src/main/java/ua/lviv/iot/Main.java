@@ -1,4 +1,4 @@
-package main.java.ua.lviv.iot;
+package ua.lviv.iot;
 
 import java.io.*;
 import java.util.stream.Stream;
